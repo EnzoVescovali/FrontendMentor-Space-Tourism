@@ -9,7 +9,7 @@ The challenge is to build out this project and get it looking as close to the de
 ### Links
 
 - Figma URL: https://www.figma.com/file/ndzYNyxVCbikwUMqgNgDwc/space-tourism-website?type=design&node-id=0%3A1&mode=design&t=Q7wAj303lYWnRRzO-1
-- Live Site URL: ...
+- Live Site URL: https://enzovescovali.github.io/FrontendMentor-Space-Tourism/
 
 ### Built With
 
