@@ -1,0 +1,19 @@
+@media (width >= 560px) {
+    body {
+        background-image: url(../img/home/background-home-tablet.jpg);
+    }
+
+    .btn {
+        font-size: var(--fs-tb-btn);
+    }
+}
+
+@media (width >= 720px) {
+    body {
+        background-image: url(../img/home/background-home-desktop.jpg);
+    }
+
+    .btn {
+        font-size: var(--fs-cp-btn);
+    }
+}

@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: var(--fw-700);
+}
+
+p,
+.subHead {
+    color: var(--clr-lgt);
+}

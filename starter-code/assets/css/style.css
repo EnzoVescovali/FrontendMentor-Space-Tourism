@@ -1,0 +1,43 @@
+body {
+    background-image: url(../img/home/background-home-mobile.jpg);
+}
+/* nav */
+ul {
+    gap: 2rem;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: var(--fs-mb-h2);
+    font-family: var(--ff-500);
+}
+
+
+.btn {
+    font-size: var(--fs-mb-);
+    /* padding: 2em;  */
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.btn::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-neutral-lgt);
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+}

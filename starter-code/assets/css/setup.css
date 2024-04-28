@@ -1,0 +1,47 @@
+:root {
+    /* mobile */
+    --fs-mb-h1: 5rem;
+    --fs-mb-h2: 3.5rem;
+    --fs-mb-btn: 1.25rem;
+    --fs-mb-300: .875rem; /*small txt above distance*/
+    --fs-mb-400: .9375rem;
+    --fs-mb-500: 1rem; /*grey txt above name*/
+    --fs-mb-600: 1.5rem; /*bigger txt (distance)*/
+    --fs-mb-700: 1.75rem; /*big name*/
+
+    /* tablet */
+    --fs-tb-h1: 9.375rem;
+    --fs-tb-h2: 5rem;
+    --fs-tb-btn: 2rem;
+    --fs-tb-300: .875rem; 
+    --fs-tb-400: 1rem;
+    --fs-tb-500: 1.5rem;
+    --fs-tb-600: 1.75rem;
+    --fs-tb-700: 2.5rem;
+
+    /* computer */
+    --fs-cp-h1: 9.375rem;
+    --fs-cp-h2: 6.25rem;
+    --fs-cp-btn: 2rem;
+    --fs-cp-300: .875rem; 
+    --fs-cp-400: 1.125rem;
+    --fs-cp-500: 2rem;
+    --fs-cp-600: 1.75rem;
+    --fs-cp-700: 3.5rem;
+
+    /* global */
+    /* font-weight */
+    --fw-700: 700; 
+
+    /* font-family */
+    --ff-300: "Barlow Condensed", sans-serif;
+    --ff-400: "Barlow", sans-serif;
+    --ff-500: "Bellefair", serif; 
+
+    /* color */
+    --clr-neutral-drk: rgb(11, 13, 23);
+    --clr-neutral-lgt: rgb(255, 255, 255);
+    --clr-lgt-transp: rgba(255, 255, 2555, 0.04);
+    --clr-lgt: rgb(208, 214, 249);
+
+}
