@@ -3,6 +3,26 @@
         background-image: url(../img/home/background-home-tablet.jpg);
     }
 
+    header {
+        justify-content: space-between;
+
+        && ul {
+            flex-direction: row;
+            height: fit-content;
+            padding: 0rem 3rem;
+            /* border: 1px solid red; */
+        }
+
+        && span {
+            display: none;
+        }
+    }
+
+    .homeContainer {
+        flex-direction: row;
+    }
+
+    /* font-size */
     .btn {
         font-size: var(--fs-tb-btn);
     }
@@ -13,7 +33,58 @@
         background-image: url(../img/home/background-home-desktop.jpg);
     }
 
+    header {
+        margin-block-start: 1rem;
+
+        && .space {
+            margin-inline-start: 2rem;
+        }
+    
+        && ul {
+            position: relative;
+            /* padding-block: 2rem; */
+
+            &&::before {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 473px;
+                background-color: rgba(255, 255, 255, 25%);
+                position: absolute;
+                left: -64%;
+                top: 50%;
+            }
+        
+            &&:last-child {
+            padding-inline-end: 8rem;
+            }
+
+            && span {
+            display: inline;
+            }
+        }
+
+        && li {
+            position: relative;
+            padding-block: 2rem;
+            /* border: 1px solid red; */
+        }
+
+        && li:first-child:after {
+            content: '';
+            display: block;
+            background-color: var(--clr-neutral-lgt);
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        } 
+    }
+
     .btn {
         font-size: var(--fs-cp-btn);
     }
 }
+
+   

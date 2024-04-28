@@ -41,7 +41,7 @@
     /* color */
     --clr-neutral-drk: rgb(11, 13, 23);
     --clr-neutral-lgt: rgb(255, 255, 255);
-    --clr-lgt-transp: rgba(255, 255, 2555, 0.04);
+    --clr-lgt-transp: rgba(255, 255, 2555, 4%);
     --clr-lgt: rgb(208, 214, 249);
 
 }
