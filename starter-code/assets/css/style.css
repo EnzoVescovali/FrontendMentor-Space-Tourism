@@ -23,8 +23,7 @@ nav {
 
 /* nav */
 header {
-    /* border: 1px solid lime; */
-    align-items: center;
+    margin-block-end: 9rem;
 
     && img {
         margin: 1rem 3.4375rem;
@@ -62,11 +61,6 @@ a {
     justify-content: space-around;
 }
 
-.homeContainer >* {
-    /* border: 1px solid red; */
-    width: fit-content;
-}
-
 h1 {
     font-size: var(--fs-mb-h2);
     font-family: var(--ff-500);
@@ -78,9 +72,14 @@ h1 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 200%;
-    height: 200%;
+    width: 150px;
+    height: 150px;
     background-color: var(--clr-neutral-lgt);
     border-radius: 50%;
     color: var(--clr-neutral-drk);
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0px 0px 0px 90px rgba(255, 255, 255, 10%); 
+    box-shadow: 0px 0px 0px 90px rgba(255, 255, 255, 10%);
 }

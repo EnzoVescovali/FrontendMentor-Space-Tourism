@@ -20,17 +20,40 @@
 
     .homeContainer {
         flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .homeContent {
+        width: min-content;
     }
 
     /* font-size */
     .btn {
         font-size: var(--fs-tb-btn);
+        width: 242px;
+        height: 242px;
+
     }
 }
 
 @media (width >= 720px) {
+    /* font */
+    h1 {
+        font-size: var(--fs-cp-h1);
+    }
+
+    p {
+        font-size: var(--fs-cp-400);
+    }
+
+    .fs600 {
+        font-size: var(--fs-cp-600);
+    }
+    /* font */
+
     body {
         background-image: url(../img/home/background-home-desktop.jpg);
+        overflow: hidden;
     }
 
     header {
@@ -42,7 +65,6 @@
     
         && ul {
             position: relative;
-            /* padding-block: 2rem; */
 
             &&::before {
                 content: '';
@@ -67,10 +89,9 @@
         && li {
             position: relative;
             padding-block: 2rem;
-            /* border: 1px solid red; */
         }
 
-        && li:first-child:after {
+        && li:first-child::after {
             content: '';
             display: block;
             background-color: var(--clr-neutral-lgt);
@@ -80,11 +101,33 @@
             right: 0;
             bottom: 0;
         } 
+
+        && li::before {
+            content: '';
+            display: none;
+            background-color: var(--clr-neutral-lgt);
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        } 
+
+        && li:hover::before {
+            display: block;
+        }
+    }
+
+    .btnContainer {
+        margin-block-start: 3rem;
     }
 
     .btn {
         font-size: var(--fs-cp-btn);
+        width: 240px;
+        height: 240px;
     }
+    
 }
 
    
