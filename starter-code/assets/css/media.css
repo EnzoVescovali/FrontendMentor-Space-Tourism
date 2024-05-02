@@ -1,94 +1,31 @@
 @media (width >= 560px) {
+    /* font */
+    h1 {
+        font-size: var(--fs-tb-h1);
+    }
+
+    fs600 {
+        font-size: var(--fs-tb-600);
+    }
+    /* font */
+
     body {
         background-image: url(../img/home/background-home-tablet.jpg);
     }
 
     header {
         justify-content: space-between;
+        margin-block-end: 6rem;        
 
         && ul {
             flex-direction: row;
             height: fit-content;
             padding: 0rem 3rem;
-            /* border: 1px solid red; */
-        }
-
-        && span {
-            display: none;
-        }
-    }
-
-    .homeContainer {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .homeContent {
-        width: min-content;
-    }
-
-    /* font-size */
-    .btn {
-        font-size: var(--fs-tb-btn);
-        width: 242px;
-        height: 242px;
-
-    }
-}
-
-@media (width >= 720px) {
-    /* font */
-    h1 {
-        font-size: var(--fs-cp-h1);
-    }
-
-    p {
-        font-size: var(--fs-cp-400);
-    }
-
-    .fs600 {
-        font-size: var(--fs-cp-600);
-    }
-    /* font */
-
-    body {
-        background-image: url(../img/home/background-home-desktop.jpg);
-        overflow: hidden;
-    }
-
-    header {
-        margin-block-start: 1rem;
-
-        && .space {
-            margin-inline-start: 2rem;
-        }
-    
-        && ul {
-            position: relative;
-
-            &&::before {
-                content: '';
-                display: block;
-                height: 1px;
-                width: 473px;
-                background-color: rgba(255, 255, 255, 25%);
-                position: absolute;
-                left: -64%;
-                top: 50%;
-            }
-        
-            &&:last-child {
-            padding-inline-end: 8rem;
-            }
-
-            && span {
-            display: inline;
-            }
         }
 
         && li {
-            position: relative;
             padding-block: 2rem;
+            position: relative;
         }
 
         && li:first-child::after {
@@ -116,6 +53,96 @@
         && li:hover::before {
             display: block;
         }
+
+        && span {
+            display: none;
+        }
+    }
+
+    .homeContainer {
+        margin-block-start: 2rem;
+        gap: 10rem;
+    }
+
+    .homeContent {
+        text-align: center;
+        width: min-content;
+
+        && h1 {
+            margin-block: 1rem;
+        }
+    }
+
+    /* font-size */
+    .btn {
+        font-size: var(--fs-tb-btn);
+        width: 210px;
+        height: 210px;
+        margin-block-end: 5rem;
+
+        
+        &&:hover {
+            -webkit-box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 10%); 
+            box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 10%);
+        }
+    }
+}
+
+@media (width >= 720px) {
+    /* font */
+    h1 {
+        font-size: var(--fs-cp-h1);
+    }
+
+    p {
+        font-size: var(--fs-cp-400);
+    }
+
+    .fs600 {
+        font-size: var(--fs-cp-600);
+    }
+    /* font */
+
+    body {
+        background-image: url(../img/home/background-home-desktop.jpg);
+        overflow: hidden;
+    }
+
+    header {
+        margin-block-start: 1rem;   
+        margin-block-end: 9rem;
+
+        && .space {
+            margin-inline-start: 2rem;
+        }
+    
+        && ul {
+            position: relative;
+
+            &&::before {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 473px;
+                background-color: rgba(255, 255, 255, 25%);
+                position: absolute;
+                left: -64%;
+                top: 50%;
+            }
+        
+            &&:last-child {
+            padding-inline-end: 8rem;
+            }
+
+            && span {
+            display: inline;
+            }
+        }
+    }
+
+    .homeContainer {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     .btnContainer {
@@ -126,8 +153,12 @@
         font-size: var(--fs-cp-btn);
         width: 240px;
         height: 240px;
+
+        &&:hover {
+            -webkit-box-shadow: 0px 0px 0px 90px rgba(255, 255, 255, 10%); 
+            box-shadow: 0px 0px 0px 90px rgba(255, 255, 255, 10%);
+        }
     }
-    
 }
 
    

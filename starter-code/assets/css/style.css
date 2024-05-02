@@ -23,7 +23,6 @@ nav {
 
 /* nav */
 header {
-    margin-block-end: 9rem;
 
     && img {
         margin: 1rem 3.4375rem;
@@ -51,7 +50,6 @@ header {
     }
 }
 
-
 a {
     text-decoration: none;
 }
@@ -59,6 +57,7 @@ a {
 .homeContainer {
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 h1 {
@@ -77,9 +76,4 @@ h1 {
     background-color: var(--clr-neutral-lgt);
     border-radius: 50%;
     color: var(--clr-neutral-drk);
-}
-
-.btn:hover {
-    -webkit-box-shadow: 0px 0px 0px 90px rgba(255, 255, 255, 10%); 
-    box-shadow: 0px 0px 0px 90px rgba(255, 255, 255, 10%);
 }
